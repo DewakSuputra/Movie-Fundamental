@@ -1,0 +1,28 @@
+@media screen and (max-width: 750px) {
+    nav nav-links {
+        background-color: green;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(100%);
+        display: none;
+      }
+    
+      nav .menu-bar {
+        display: block;
+      }
+    
+      nav .sidebar-active {
+        z-index: 99;
+        transform: translateX(0%);
+        background: var(--main-color);
+        width: 80%;
+        left: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      }
+}

@@ -1,0 +1,150 @@
+:root {
+    --main-color: rgb(8, 8, 8);
+    --secondary-color: rgb(255, 196, 0);
+  }  
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+}
+
+section a {
+    color: #fff;
+	text-decoration: none;
+}
+
+section a:hover {
+    color: var(--secondary-color);
+}
+
+header {
+    z-index: 80;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    background-color: var(--main-color);
+    padding: 15px 0;
+    z-index: 70;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .menu-bar {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    margin-right: 10px;
+    padding: 20px;
+  }
+
+
+
+.jumbotron {
+    margin-top: 50px;
+    padding: 120px 60px;
+    background: url("https://cdn.pixabay.com/photo/2016/03/23/17/33/curtain-1275200_960_720.png");
+    height: 400px;
+    width: auto;
+    text-align: center;
+}
+
+.jumbotron b {
+    font-size: 50px;
+    color: white;
+    margin: 0;
+}
+
+.jumbotron p {
+    font-size: 17px;
+    margin-top: 0;
+    color: white;
+}
+
+.jumbotron-hidden {
+    display: none;
+}
+
+main {
+    z-index: 50;
+}
+
+#movie {
+  padding: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem 2rem;
+  width: 100%;
+}
+
+#movie a{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+
+}
+
+#movie a:hover {
+    color: var(--secondary-color);
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 black;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.movie-img img {
+    width: 100%;
+}
+
+footer {
+    background-color: var(--main-color);
+    padding: 60px;
+  }
+  
+footer .company {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minimax(200px, 1fr));
+  }
+  
+footer .links-footer {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+footer .title {
+    color: var(--secondary-color);
+    font-size: 20px;
+}
+
+footer .sub-links {
+    list-style: none;
+}
